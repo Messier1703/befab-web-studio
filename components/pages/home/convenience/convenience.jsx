@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './convenience.module.scss';
 import ConvenienceCards from '@/components/ui/convenienceCards/convenienceCards';
+import PurpleButton from '@/components/ui/purpleButton/purpleButton';
 
 export default function Convenience() {
   return (
@@ -12,6 +13,18 @@ export default function Convenience() {
           <p>Мы не просто разрабатываем и отдаём вам сайт, мы объясняем каждый шаг разработки, именно поэтому наши решения обдуманные и конкурентоспособные.</p>
         </div>
         <ConvenienceCards />
+      </div>
+      <div className={styles.convenience_guidance}>
+        <div className="container">
+          <h2>Получите консультацию сейчас</h2>
+          <h2>это бесплатно</h2>
+          <form>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <PurpleButton>Получить консультацию</PurpleButton>
+          </form>
+        </div>
       </div>
     </section>
   )

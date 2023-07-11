@@ -1,4 +1,12 @@
 .reviews {
   height: 100vh;
   background: #331899 url('/images/reviews-bg.jpg') no-repeat center/cover;
+  color: #FEFEFE;
+
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
 }

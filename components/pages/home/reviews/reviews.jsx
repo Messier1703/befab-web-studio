@@ -7,7 +7,6 @@ export default function Reviews() {
     <section className={styles.reviews}>
       <div className="container">
         <h2>Что говорят о нашей работе</h2>
-        <PurpleButton>huy</PurpleButton>
       </div>
     </section>
   )

@@ -1,0 +1,48 @@
+.offers {
+  background: white url('/images/offers-bg.jpg') no-repeat center/cover;
+  color: #2D2C35;
+
+  &_wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_title {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    h6 {
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 60px;
+      letter-spacing: 0.5px;
+      rotate: -90deg;
+    }
+
+    hr{
+      background: #2D2C35; 
+      height: 2px;
+    }
+
+    h2 {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 55px;
+      letter-spacing: 1px;
+      padding-bottom: 7%;
+    }
+
+    // span{
+    //   color: transparent;
+    // }
+  }
+
+  &_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.main {
+  height: 100vh;
+  background: #540295 url('/images/main-bg.jpg') no-repeat center/cover;
+  color: white;
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_content {
+
+    h1 {
+      font-size: 130px;
+      font-weight: 800;
+      line-height: 140px;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 65px;
+      font-weight: 700;
+      line-height: 130px;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0.7px;
+      text-transform: lowercase;
+    }
+
+    button {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: 0.5px;
+    }
+
+  }
+
+}

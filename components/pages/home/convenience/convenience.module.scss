@@ -1,0 +1,27 @@
+.convenience {
+  height: 100vh;
+  background: #36168e url('/images/responsibility-bg.jpg') no-repeat center/cover;
+  color: white;
+
+  &_title {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+
+    h2 {
+      color: #FEFEFE;
+      font-family: SF Pro Display;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 37px;
+      letter-spacing: 0.5px;
+    }
+  }
+}

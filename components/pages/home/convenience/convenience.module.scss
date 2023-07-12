@@ -1,34 +1,40 @@
-.convenience {
-  height: 100vh;
-  background: #36168e url('/images/responsibility-bg.jpg') no-repeat center/cover;
-  color: #FEFEFE;
+  .convenience {
+      height: 100vh;
+      background: #36168e url("/images/responsibility-bg.jpg") no-repeat center/cover;
+      color: #fefefe;
 
-  h2 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 1px;
+      h2 {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 60px;
+          letter-spacing: 1px;
+      }
+
+      &_title {
+          display: grid;
+          grid-template-columns: 1fr 0.3fr 1fr;
+
+          p {
+              font-size: 25px;
+              font-weight: 500;
+              line-height: 37px;
+              letter-spacing: 0.5px;
+          }
+      }
+
+      &_guidance {
+          color: #2d2c35;
+          background: #fefefe;
+          padding: 3% 0;
+
+          h2 {
+              font-weight: 600;
+              line-height: 55px;
+          }
+
+          form{
+            display: flex;
+            gap: 20px;
+          }
+      }
   }
-
-  &_title {
-    display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr;
-
-    p {
-      font-size: 25px;
-      font-weight: 500;
-      line-height: 37px;
-      letter-spacing: 0.5px;
-    }
-  }
-
-  &_guidance {
-    color: #2D2C35;
-    background: #FEFEFE;
-
-    h2 {
-      font-weight: 600;
-      line-height: 55px;
-    }
-  }
-}

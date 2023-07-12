@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './convenience.module.scss';
 import ConvenienceCards from '@/components/ui/convenienceCards/convenienceCards';
 import PurpleButton from '@/components/ui/purpleButton/purpleButton';
+import TextInput from '@/components/ui/textInput/textInput';
 
 export default function Convenience() {
   return (
@@ -19,9 +20,9 @@ export default function Convenience() {
           <h2>Получите консультацию сейчас</h2>
           <h2>это бесплатно</h2>
           <form>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <TextInput placeholder='Введите имя'/>
+            <TextInput placeholder='Номер телефона'/>
+            <TextInput placeholder='Введите e-mail'/>
             <PurpleButton>Получить консультацию</PurpleButton>
           </form>
         </div>

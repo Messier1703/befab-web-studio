@@ -12,15 +12,17 @@
 
   &_title {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
+    justify-content: space-between;
+
+    div{
+      rotate: -90deg;
+    }
 
     h6 {
       font-size: 25px;
       font-weight: 300;
       line-height: 60px;
       letter-spacing: 0.5px;
-      rotate: -90deg;
     }
 
     hr{

@@ -1,40 +1,58 @@
   .convenience {
-      height: 100vh;
-      background: #36168e url("/images/responsibility-bg.jpg") no-repeat center/cover;
-      color: #fefefe;
+    height: 100vh;
+    background: #36168e url("/images/responsibility-bg.jpg") no-repeat center/cover;
+    color: #fefefe;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+
+    &_title {
+      display: grid;
+      grid-template-columns: 1fr 0.3fr 1fr;
+
+      p {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 37px;
+        letter-spacing: 0.5px;
+      }
+
+      div {
+        transform: rotate(-90deg);
+        text-align: center;
+
+        h6 {
+          font-size: 25px;
+          font-weight: 300;
+          line-height: 60px;
+          letter-spacing: 0.5px;
+        }
+
+        hr {
+          opacity: 0.5;
+          background: #fefefe;
+          height: 2px;
+        }
+      }
+    }
+
+    &_guidance {
+      color: #2d2c35;
+      background: #fefefe;
+      padding: 3% 0;
 
       h2 {
-          font-size: 50px;
-          font-weight: 700;
-          line-height: 60px;
-          letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 55px;
       }
 
-      &_title {
-          display: grid;
-          grid-template-columns: 1fr 0.3fr 1fr;
-
-          p {
-              font-size: 25px;
-              font-weight: 500;
-              line-height: 37px;
-              letter-spacing: 0.5px;
-          }
+      form {
+        display: flex;
+        gap: 20px;
       }
-
-      &_guidance {
-          color: #2d2c35;
-          background: #fefefe;
-          padding: 3% 0;
-
-          h2 {
-              font-weight: 600;
-              line-height: 55px;
-          }
-
-          form{
-            display: flex;
-            gap: 20px;
-          }
-      }
+    }
   }

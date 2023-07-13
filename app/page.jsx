@@ -5,10 +5,12 @@ import Convenience from "@/components/pages/home/convenience/convenience";
 import Prices from "@/components/pages/home/prices/prices";
 import Reviews from "@/components/pages/home/reviews/reviews";
 import Footer from "@/components/ui/footer/footer";
+import Header from "@/components/ui/header/header";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <Main />
       <Portfolio />
       <Offers />

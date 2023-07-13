@@ -1,0 +1,45 @@
+.reviews {
+
+  &_cards {
+    display: flex;
+    gap: 35px;
+
+    article {
+      display: grid;
+      column-gap: 19px;
+      grid-template-areas:
+      'img name'
+      'img job'
+      'img review'
+      'img btn';
+
+      h4 {
+        font-size: 15px;
+        font-weight: 600;
+        grid-area: name;
+      }
+
+      h6 {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 18px;
+        grid-area: job;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        grid-area: review;
+      }
+    }
+  }
+
+  &_img{
+    grid-area: img;
+  }
+
+  &_btn{
+    grid-area: btn;
+  }
+}

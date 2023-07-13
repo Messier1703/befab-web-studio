@@ -10,7 +10,10 @@ export default function Convenience() {
       <div className="container">
         <div className={styles.convenience_title}>
           <h2>Мы отвечаем за свои решения</h2>
-          <div></div>
+          <div>
+            <h6>как именно</h6>
+            <hr />
+          </div>
           <p>Мы не просто разрабатываем и отдаём вам сайт, мы объясняем каждый шаг разработки, именно поэтому наши решения обдуманные и конкурентоспособные.</p>
         </div>
         <ConvenienceCards />
@@ -20,9 +23,9 @@ export default function Convenience() {
           <h2>Получите консультацию сейчас</h2>
           <h2>это бесплатно</h2>
           <form>
-            <TextInput placeholder='Введите имя'/>
-            <TextInput placeholder='Номер телефона'/>
-            <TextInput placeholder='Введите e-mail'/>
+            <TextInput placeholder='Введите имя' />
+            <TextInput placeholder='Номер телефона' />
+            <TextInput placeholder='Введите e-mail' />
             <PurpleButton>Получить консультацию</PurpleButton>
           </form>
         </div>

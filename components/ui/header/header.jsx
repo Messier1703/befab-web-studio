@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Link href="#">BeFab Web Studio</Link>
+      <Link className={styles.header_logo} href="#">BeFab Web Studio</Link>
       <ul>
         <li><Link href="#portfolio">Портфолио</Link></li>
         <li><Link href="#offers">Что мы делаем</Link></li>

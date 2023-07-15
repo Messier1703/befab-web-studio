@@ -1,0 +1,21 @@
+.convenience {
+  &_guidance {
+    color: #2d2c35;
+    background: #FEFEFE;
+    padding: 3% 0;
+
+    &_title {
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-weight: 600;
+      line-height: 55px;
+    }
+
+    form {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

@@ -1,18 +1,29 @@
 .convenience {
 
   &_cards{
-    display: grid;
-    // grid-template-columns: 1fr 1fr;
-    grid-template-areas: '. . card card'
-    'card card . .';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4% 0;
+
+    &_container{
+      display: flex;
+
+      &:first-child{
+        justify-content: flex-start;
+      }
+
+      &:last-child{
+        justify-content: flex-end;
+      }
+    }
   }
 
   &_card {
     border: 1px solid rgb(254, 254, 254, 0.5);
     box-shadow: 2px 2px 10px 0px rgba(21, 12, 73, 0.15);
-    padding: 4% 2%;
-
-    grid-area: card;
+    padding: 1% 2%;
+    width: 440px;
 
     h4 {
       font-size: 20px;
@@ -43,4 +54,23 @@
       letter-spacing: 0.3px;
     }
   }
+}
+
+@media (max-width: 800px) {
+  .convenience {
+
+    &_cards{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 4% 0;
+      justify-content: center;
+      align-items: center;
+  
+      &_container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+}
 }

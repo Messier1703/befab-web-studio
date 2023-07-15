@@ -1,5 +1,5 @@
 .prices {
-  height: 100vh;
+  height: 1080px;
   background: white url('/images/prices-bg.jpg') no-repeat center/cover;
   color: #2D2C35;
 
@@ -8,5 +8,11 @@
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 1px;
+    width: 50%;
+    padding: 130px 0 50px;
+  }
+
+  article{
+    width: 700px;
   }
 }

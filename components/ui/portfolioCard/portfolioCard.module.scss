@@ -1,0 +1,8 @@
+.portfolio {
+    &_card {
+        background: url('/images/portfolio-card-bg.jpg') no-repeat center/cover;
+        width: 633px;
+        height: 684px;
+        filter: drop-shadow(2px 2px 20px rgba(28, 0, 51, 0.10));
+    }
+}

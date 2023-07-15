@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './footer.module.scss';
+import PurpleButton from '../purpleButton/purpleButton';
 
 export default function Footer() {
   return (
@@ -21,7 +22,8 @@ export default function Footer() {
             <img src="/svg/viber-logo.svg" alt="Viber" />
           </div>
           <nav className={styles.footer_nav}>
-            
+            <PurpleButton>Заказать звонок</PurpleButton>
+            <PurpleButton>Скачать бриф</PurpleButton>
           </nav>
           <div className={styles.footer_copyright}>
             <p>© Все права защищены | BeFab Web Studio 2020</p>

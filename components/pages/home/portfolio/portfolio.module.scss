@@ -1,12 +1,32 @@
 .portfolio {
-  height: 100vh;
+  height: 1080px;
   background-color: #F5F5F5;
+  transform-style: preserve-3d;
+  z-index: -1;
+
+  &_background{
+text-align: center;
+    transform: translateZ(-10px) scale(2);
+  }
+
+  &_foreground{
+    transform: translateZ(-5px) scale(1.5);
+    top: 60%;
+  }
+
+  &_background, &_foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   &_wrapper {
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+   height: 1080px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   perspective: 10px;
+   position: relative;
 
     h2 {
       color: #2D2C35;
@@ -16,7 +36,7 @@
       line-height: 60px;
       letter-spacing: 7.5px;
       text-transform: uppercase;
-      padding: 271px 0 100px;
+      padding: 171px 0 100px;
     }
 
     button {
@@ -30,5 +50,12 @@
     }
 
   }
+}
 
+@media (max-width: 1124px) {
+  .portfolio{
+  h2{
+    font-size: 100px; 
+  }
+  }
 }

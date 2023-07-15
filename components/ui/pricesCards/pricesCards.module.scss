@@ -1,0 +1,35 @@
+.prices {
+  &_cards{
+    width: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    position: relative;
+  }
+  
+  &_card {
+    display: flex;
+    background: #FEFEFE;
+    box-shadow: 2px 2px 10px 0px rgba(56, 28, 150, 0.25);
+    width: 700px;
+    
+    &:nth-child(2){
+      position: absolute;
+      right: 0;
+      margin-top: 25px;
+    }
+
+    h4 {
+      writing-mode: sideways-lr;
+    }
+
+    &_price {
+      display: flex;
+      width: 680px;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background: url('/images/price-card-bg.jpg') no-repeat center/cover;
+      color: #FEFEFE;
+    }
+  }
+}

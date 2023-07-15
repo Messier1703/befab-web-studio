@@ -45,3 +45,22 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .offers{
+    &_cards{
+      grid-gap: 15px;
+    }
+
+    &_card{
+      h4{
+        width: 100%;
+      }
+
+      div{
+        padding-top: 15px;
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -1,12 +1,79 @@
 .reviews {
-  height: 100vh;
-  background: #331899 url('/images/reviews-bg.jpg') no-repeat center/cover;
+  height: 1080px;
+  background: #331899 url('/images/reviews-bg.jpg') no-repeat center/cover fixed;
   color: #FEFEFE;
+
+  ul {
+    list-style-image: url('/svg/prices-bulletpoint.svg');
+  }
+
+  &_deco {
+    background: #FEFEFE;
+    height: 183px;
+    display: flex;
+    align-items: center;
+    color: #2D2C35;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+
+    h3 {
+      background: #331899 url('/images/reviews-bg.jpg') no-repeat left;
+      color: #4900A7;
+      font-size: 280px;
+      font-weight: 900;
+      line-height: 40px;
+      letter-spacing: 5.6px;
+      background-clip: text;
+      color: transparent;
+      z-index: 5;
+      height: 100%;
+      padding-top: 70px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+
+      span {
+        color: #8100E9;
+        font-weight: 900;
+      }
+    }
+  }
 
   h2 {
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 1px;
+    width: 50%;
+    padding: 189px 0 100px;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    overflow: hidden;
+
+    button{
+      color: #FEFEFE;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .reviews {
+    &_content {
+      grid-template-columns: 1fr;
+    }
+    h2{
+      width: 100%;
+    }
   }
 }

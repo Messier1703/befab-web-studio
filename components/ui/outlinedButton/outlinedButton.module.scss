@@ -1,0 +1,33 @@
+.outlined_button {
+  color: #2D2C35;
+  font-size: 18px;
+//   background: transparent;
+  position: relative;
+  transition: .9s;
+  overflow: hidden;
+  z-index: 2;
+  padding: 1% 2%;
+  border: 2px solid #8100E9;
+
+    &:hover {
+        color: #fefefe;
+        transition: .7s;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: -40px;
+        transform:  translateX(40px);
+        background: #8100E9;
+        z-index: -1;
+        transition: .6s;
+    }
+
+    &:hover:before {
+        width: 160%;
+    }
+}

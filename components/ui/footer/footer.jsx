@@ -17,9 +17,11 @@ export default function Footer() {
             <h6>Контакты</h6>
             <a href="#">+7 (900) 293-64-55</a>
             <a href="#">info@befab.ru</a>
-            <img src="/svg/whatsapp-logo.svg" alt="WhatsApp" />
-            <img src="/svg/telegram-logo.svg" alt="Telegram" />
-            <img src="/svg/viber-logo.svg" alt="Viber" />
+            <div className={styles.footer_logos}>
+              <img src="/svg/whatsapp-logo.svg" alt="WhatsApp" />
+              <img src="/svg/telegram-logo.svg" alt="Telegram" />
+              <img src="/svg/viber-logo.svg" alt="Viber" />
+            </div>
           </div>
           <nav className={styles.footer_nav}>
             <PurpleButton>Заказать звонок</PurpleButton>

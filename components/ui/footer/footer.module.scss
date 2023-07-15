@@ -1,10 +1,50 @@
 .footer {
   color: #2D2C35;
 
-  &_wrapper{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+
+    nav,
+    div {
+      width: 25%;
+    }
+
+    nav {
+      button {
+        display: block;
+        text-align: center;
+        padding: 5%;
+      }
+    }
+
+    h6 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0.4px;
+    }
+
+    a {
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.3px;
+    }
   }
+
+
 
   &_copyright {
     p {

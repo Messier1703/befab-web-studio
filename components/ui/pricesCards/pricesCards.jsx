@@ -10,18 +10,19 @@ export default function PricesCards() {
   return (
     <div className={styles.prices_cards}>
       <article className={styles.prices_card}>
-        <h4>тариф “идеальный”</h4>
+      <h4>тариф<br/>“идеальный”</h4>
         <div className={styles.prices_card_wrapper}>
           <div className={styles.prices_card_benefits}>
-            <ul>
+            <ul className={styles.prices_card_benefits_main}>
               <li>lorem</li>
               <li>ipsum</li>
               <li>dolor</li>
             </ul>
-            <ul>
+            <ul className={styles.prices_card_benefits_general}>
               <li>lorem</li>
               <li>ipsum</li>
               <li>dolor</li>
+              <li>lorem</li>
             </ul>
           </div>
           <div className={styles.prices_card_price}>
@@ -32,18 +33,19 @@ export default function PricesCards() {
         </div>
       </article>
       <article className={styles.prices_card}>
-        <h4>тариф “идеальный”</h4>
+        <h4>тариф<br/>“идеальный”</h4>
         <div className={styles.prices_card_wrapper}>
           <div className={styles.prices_card_benefits}>
-            <ul>
+          <ul className={styles.prices_card_benefits_main}>
               <li>lorem</li>
               <li>ipsum</li>
               <li>dolor</li>
             </ul>
-            <ul>
+            <ul className={styles.prices_card_benefits_general}>
               <li>lorem</li>
               <li>ipsum</li>
               <li>dolor</li>
+              <li>lorem</li>
             </ul>
           </div>
           <div className={styles.prices_card_price}>

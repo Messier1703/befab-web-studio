@@ -1,3 +1,4 @@
+'use client'
 import Main from "@/components/pages/home/main/main";
 import Portfolio from "@/components/pages/home/portfolio/portfolio";
 import Offers from "@/components/pages/home/offers/offers";

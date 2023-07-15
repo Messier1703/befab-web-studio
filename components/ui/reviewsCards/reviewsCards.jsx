@@ -26,8 +26,8 @@ const ReviewsCards = () => {
       className={styles.reviews_cards}
     >
       {reviewsCards.map((card) => (
-        <SwiperSlide>
-          <article className={styles.reviews_card} key={index}>
+        <SwiperSlide key={card.id}>
+          <article className={styles.reviews_card}>
             <Image className={styles.reviews_img} src={card.img} width={126} height={279} alt="Review"/>
             <h4>{card.name}</h4>
             <h6>{card.job}</h6>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './footer.module.scss';
 import PurpleButton from '../purpleButton/purpleButton';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -18,9 +19,9 @@ export default function Footer() {
             <a href="#">+7 (900) 293-64-55</a>
             <a href="#">info@befab.ru</a>
             <div className={styles.footer_logos}>
-              <img src="/svg/whatsapp-logo.svg" alt="WhatsApp" />
-              <img src="/svg/telegram-logo.svg" alt="Telegram" />
-              <img src="/svg/viber-logo.svg" alt="Viber" />
+              <Image src="/svg/whatsapp-logo.svg" alt="WhatsApp" width={25} height={25} />
+              <Image src="/svg/telegram-logo.svg" alt="Telegram" width={25} height={25} />
+              <Image src="/svg/viber-logo.svg" alt="Viber" width={25} height={25} />
             </div>
           </div>
           <nav className={styles.footer_nav}>

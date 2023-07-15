@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './reviews.module.scss';
 import ReviewsCards from '@/components/ui/reviewsCards/reviewsCards';
+import Image from 'next/image';
 
 export default function Reviews() {
   return (
@@ -13,7 +14,7 @@ export default function Reviews() {
           <div className={styles.reviews_deco}>
             <h3>AB</h3>
             <div>
-              <img src="/svg/reviews-graph.svg" alt="Graph" />
+              <Image src="/svg/reviews-graph.svg" alt="Graph" width={78} height={37} />
               <p><span>Более 87%</span> клиентов обращаются к нам повторно</p>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { offersCards } from '@/constants/offersCards';
 import styles from './offersCards.module.scss';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const textAnimation = {
   hidden: {
@@ -52,11 +53,11 @@ export default function OffersCards() {
           >{card.title}</motion.h4>
           <hr />
           <div>
-            <motion.img
+            <Image
               src={card.svg}
               alt="Icon"
-              variants={imgAnimation}
-              // custom={5}
+              width={76}
+              height={76}
             />
             <motion.p
             variants={rightAnimation}
